@@ -78,6 +78,6 @@ function orderTaxi(TaxiCreate $create) {
     echo "Type Taxi Car : " . $order->typeCarTaxi() . PHP_EOL;
     echo "Price: " . $order->priceTaxi() . "grn" . PHP_EOL;
 }
-print_r(orderTaxi(new EconomTaxiCreate()));
-print_r(orderTaxi(new StandartTaxiCreate()));
-print_r(orderTaxi(new LuxTaxiCreate()));
+orderTaxi(new EconomTaxiCreate());
+orderTaxi(new StandartTaxiCreate());
+orderTaxi(new LuxTaxiCreate());
